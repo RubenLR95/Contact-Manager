@@ -1,26 +1,9 @@
-<head>
-  
-</head>
+<!-- TÍTULO DE MI APP -->
+<h1>Contact Manager</h1>
+<!-- COMPONENTE PERSONALIZADO PARA MOSTRAR LA LISTA DE CONTACTOS -->
+ <!-- EL ATRIBUTO #list ES UNA REFERENCIA LOCAL AL COMPONENTE -->
+<app-contact-list #list></app-contact-list>
 
-<body>
-  
-
-
-<div class="card flex justify-center">
-    <p-button 
-    label="Check"
-    
-    
-    />
-
-</div>
-
-<p-button label="Info" severity="info"></p-button>
-<p-button label="Éxito" severity="success"></p-button>
-<p-button label="Aviso" severity="warn"></p-button>
-<p-button label="Eliminar" severity="danger"></p-button>
-
-
-
+<!-- router-oulet ->  PUNTO DE INSERCIÓN PARA LAS RUTAS. NO BORRAR NUNCA -->
 <router-outlet />
-</body>
+
