@@ -1,0 +1,53 @@
+# NODE MODULES
+
+# Frontend nose_modules
+/frontend/node_modules
+
+# Backend node_modules
+/Backend/node_modules
+
+# npm logs 
+npm-debug.log*
+yarn-error.log*
+
+# BUILD OUTPUT / TEMPORARY FILES
+
+
+# frontend build artifacts
+/frontend/dist
+/frontend/temp 
+/frontend/out-tsc
+/frontend/.angular/cache
+/frontend/.sass-cache
+
+
+#Backend build
+/backend/dist
+
+
+#Coverage reports
+/frontend/coverage
+/backend/coverage
+
+
+# Otros archivos temporales comunes
+*.log
+.cache/
+tmp/
+
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extension.json
+
+
+# Otras carpetas temporales de editores
+.history
+
+#SYSTEM FILES
+.DS_Stores
+Thumbs.db 
+
+
