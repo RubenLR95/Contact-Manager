@@ -1,5 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { ButtonModule } from 'primeng/button';
 import { ContactListComponent } from './components/contact-list/contact-list.component';
 
@@ -9,6 +9,9 @@ import { ContactListComponent } from './components/contact-list/contact-list.com
     RouterOutlet,
     ButtonModule,
     ContactListComponent,
+    RouterOutlet,
+    RouterLink,
+
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

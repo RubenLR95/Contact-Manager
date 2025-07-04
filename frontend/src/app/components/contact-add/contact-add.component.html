@@ -1,0 +1,23 @@
+<h2>Nuevo Formulario</h2>
+
+<form (ngSubmit)="save()">
+
+    <label>
+        Nombre: <br>
+        <input [(ngModel)]="name" name="name" required>
+    </label>
+    <br><br>
+    <label>
+        E-mail: <br>
+        <input [(ngModel)]="email" name="email" required type="email" pattern="[^@ \t\r\n]+@[^@ \t\r\n]+\.[^@ \t\r\n]+">
+    </label>
+    <br><br>
+    <label>
+        Número de teléfono: <br>
+        <input [(ngModel)]="phone" name="phone">
+    </label>
+    <br><br>
+    <button type="submit">Crear</button>
+
+
+</form>

@@ -1,3 +1,4 @@
+
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';      //ESTO PERMITE TRABAJAR CON DATOS ASINCRÓNICOS, COMO LAS RESPUESTAS HTTP QUE LLEGAN EN EL FUTURO
@@ -5,7 +6,7 @@ import { Observable } from 'rxjs';      //ESTO PERMITE TRABAJAR CON DATOS ASINCR
 // DEFINIMOS LA ESTRUSTURA QUE PUEDE TENER UN CONTACTO
 
 export interface Contact{
-  id: number; // IDENTIFICADOR ÚNICO DEL CONTACTO
+  id?: number; // IDENTIFICADOR ÚNICO DEL CONTACTO
   name: string; // NOMBRE DEL CONTACTO
   email: string; // CORREO ELECTRÓNICO
   phone: string; // TELEFONO DELL CONTACTO 
@@ -27,9 +28,11 @@ export class ContactService {
     return this.http.get<Contact[]>(this.API);
   }
 
-  create(contact: Omit<Contact, 'id'>): Observable<Contact>{  //PERMITE CREAR CONTACTOS
-    return this.http.post<Contact>(this.API, contact);
-  } 
+  add(c: Contact): Observable<Contact> {
+  // POST http://localhost:3001/contacts con el cuerpo c
+  return this.http.post<Contact>(this.API, c);
+  }
+ 
 
   update(contact: Contact): Observable<Contact>{  //PERMITE MODIFICAR CONTACTOS
     return this.http.put<Contact>(

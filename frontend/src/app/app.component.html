@@ -1,7 +1,12 @@
 <!-- TÍTULO DE MI APP -->
 <h1>Contact Manager</h1>
+<nav>
+    <a routerLink="contacts">Contactos</a>
+    <a routerLink="contacts/add">Nuevo Contacto</a>
+</nav>
 <!-- COMPONENTE PERSONALIZADO PARA MOSTRAR LA LISTA DE CONTACTOS -->
  <!-- EL ATRIBUTO #list ES UNA REFERENCIA LOCAL AL COMPONENTE -->
+
 <app-contact-list #list></app-contact-list>
 
 <!-- router-oulet ->  PUNTO DE INSERCIÓN PARA LAS RUTAS. NO BORRAR NUNCA -->

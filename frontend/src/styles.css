@@ -1,3 +1,77 @@
 @import "primeicons/primeicons.css";
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
+
+.orbitron-uniquifier {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
 
 
+body{
+    background-color: var(--p-primary-200); 
+    font-family: "Orbitron",sans-serif ;
+    color:black
+    
+}
+.p-button-info{
+    background-color: var(--p-info-200) !important;
+    border-color: var(--p-info-500) !important;
+
+}
+.p-button-info .p-button-label{
+   
+    border-color: var(--p-info-inverse-color) !important;
+
+}
+
+.p-button-info:hover,
+.p-button-info.p-focus{
+    background-color: var(--p-info-600) !important;
+    border-color: var(--p-info-200) !important;
+}
+
+.p-button-success{
+     background-color: var(--p-success-200) !important;
+    border-color: var(--p-success-500) !important;
+}
+.p-button-success:hover,
+.p-button-success.p-focus{
+    background-color: var(--p-success-600) !important;
+    border-color: var(--p-success-200) !important;
+}
+
+.p-button-warn{
+     background-color: var(--p-warn-200) !important;
+    border-color: var(--p-warn-500) !important;
+}
+.p-button-warn:hover,
+.p-button-warn.p-focus{
+    background-color: var(--p-warn-600) !important;
+    border-color: var(--p-warn-200) !important;
+}
+
+.p-button-danger{
+    background-color: var(--p-danger-200) !important;
+    border-color: var(--p-danger-500) !important;
+}
+.p-button-danger:hover,
+.p-button-danger.p-focus{
+    background-color: var(--p-danger-600) !important;
+    border-color: var(--p-danger-200) !important;
+}
+
+
+.form-row{
+    background: linear-gradient(var(--p-primary-200), var(--p-primary-400));
+}
+
+.form-group{
+    background-color: var(--p-primary-400) ;
+    border-radius: 0.3rem;
+}
+
+#button{
+    
+}
